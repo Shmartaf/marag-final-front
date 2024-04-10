@@ -1,0 +1,86 @@
+{
+    "board": {
+        "_id": {
+            "$oid": "account_id_2"
+        },
+        "username": "user2",
+        "board_id": "board_id_2",
+        "board_name": "Board 2",
+        "users": [
+            "user2",
+            "user3"
+        ],
+        "team": "Team B",
+        "incidents": [
+            {
+                "_id": "task_id_1",
+                "title": "Task 1",
+                "priority": 1,
+                "due_date": "2024-03-25",
+                "completed": false
+            },
+            {
+                "_id": "task_id_2",
+                "title": "Task 2",
+                "priority": 2,
+                "due_date": "2024-03-28",
+                "completed": true
+            }
+        ]
+    },
+    "mapping": {
+        "ui_schema": {
+            "type": "VerticalLayout",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/title"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/priority"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/due_date"
+                        }
+                    ]
+                },
+                {
+                    "type": "Label",
+                    "text": "Task Status"
+                },
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/completed"
+                        }
+                    ]
+                }
+            ]
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "priority": {
+                    "type": "string"
+                },
+                "due_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "completed": {
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}

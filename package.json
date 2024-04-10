@@ -1,0 +1,53 @@
+{
+  "name": "ticket",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview --port 8080",
+    "precommit": "pre-commit run",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@jsonforms/core": "^3.2.1",
+    "@jsonforms/material-renderers": "^3.2.1",
+    "@jsonforms/react": "^3.2.1",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.14",
+    "@supabase/supabase-js": "^2.41.1",
+    "aws-amplify": "^6.0.27",
+    "firebase": "^10.10.0",
+    "husky": "^9.0.11",
+    "nodeenv": "^3.0.75",
+    "permitio": "^2.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "styled-components": "^6.1.8",
+    "supabase": "^1.151.1"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^0.12.1",
+    "@aws-amplify/backend-cli": "^0.11.1",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.19",
+    "aws-cdk": "^2.136.0",
+    "aws-cdk-lib": "^2.136.0",
+    "constructs": "^10.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.4",
+    "vite": "^5.1.6"
+  }
+}

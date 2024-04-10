@@ -1,0 +1,61 @@
+{
+    "_id": "65fd8a96fb128c657ac1fc6e",
+    "username": "admin",
+    "board_name": "test board create",
+    "users": [],
+    "team": "65fd90dcc254096623474ecc",
+    "incidents": [
+        {
+            "_id": "65fd9ccbb6d044eb89ef3cbd",
+            "text test": "test",
+            "due date test": "25/02/2023"
+        },
+        {
+            "_id": "65fd9ccbb6d044eb89ef3cbe",
+            "text test": "test",
+            "due date test": "25/02/2023"
+        },
+        {
+            "_id": "65fd9ccbb6d044eb89ef3cbf",
+            "text test": "test",
+            "due date test": "25/02/2023"
+        },
+        {
+            "_id": "65fd9ccbb6d044eb89ef3cc0",
+            "text test": "test",
+            "due date test": "25/02/2023"
+        },
+        {
+            "_id": "65fd9ccbb6d044eb89ef3cc1",
+            "text test": "test",
+            "due date test": "25/02/2023"
+        }
+    ],
+    "mapping": {
+        "ui_schema": {
+            "type": "VerticalLayout",
+            "elements": [
+                {
+                    "type": "Control",
+                    "scope": "#/properties/text test"
+                },
+                {
+                    "type": "Control",
+                    "scope": "#/properties/due date test"
+                }
+            ]
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "text test": {
+                    "type": "string"
+                },
+                "due date test": {
+                    "type": "date"
+                }
+            }
+        }
+    },
+    "__v": 0
+}

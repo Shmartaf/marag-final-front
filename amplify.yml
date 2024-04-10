@@ -1,0 +1,12 @@
+version: 1
+applications:
+  - name: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    environment:
+      nodeVersion: 20.12.1
+    buildOutputDir: dist
+    env:
+      - key: NODE_ENV
+        value: production
+    appRoot: ticket
